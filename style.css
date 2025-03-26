@@ -1,105 +1,152 @@
-
+/* *{
+    border: 2px solid red;
+} */
 body {
     margin: 0;
     min-height: 100vh;
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
-    flex-basis: 1000px;;
-    /* align-items: center; */
 }
-
-.logo{
-    font-size: 24px;
-}
-.logo, .hero-text{
-    color: #F9FAF8;
-}
-.header, .hero-section,.hero-all, ul, .block-two, .illustration-container, .footer{
+/*****************General****************/
+.header, .hero-section,.hero-all, ul, .block-two, .illustration-container, .illustration, .footer, .copyright-section, .customer-testimonial{
     display:flex;
 }
+.logo, .hero-text, .hero-subtext, .copyright-section, ul{
+    color: #F9FAF8;
+}
+.block-one, .block-two, .customer-testimonial, .footer{
+    margin:auto;
+}
+/*****Width of the blocks******/
+.block-one, .footer {
+    width:1200px;
+}
+.block-two, .customer-testimonial{
+    width:900px;
+}
+/*****Sectional backgrounds*****/
+.header-hero-section{
+    /* border:2px solid red; */
+    background-color: #1F2937;
+}
+.quote-section{
+    /* border:2px solid red; */
+    background-color: #E5E7EB;
+}
+li{
+    list-style-type: None;
+}
+button{
+    background-color:#3882F6;
+}
+.footer-button, .hero-button{
+    margin-left:auto;
+    margin-right:150px;
+    border-color: #E5E7EB;
+    color: #E5E7EB;
+    border-style: solid;
+}
+
+/*******************Header-hero-section****************/
+
+.logo{
+    font-size: 48px;
+}
+.header{
+    margin-bottom: 100px;
+}
+
 .header, .hero-section{
-    padding:5px;
+    padding:5px 0px;
     align-items: center;
-    /* width:500px; */
 }
 ul{
     margin-left:auto;
     gap:15px;
+    
 }
 .hero-text-all{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    flex-basis: 800px;
+    width:450px;
 }
 .hero-section{
-    height:300px;
+    /* height:300px; */
 }
 .hero-image{
     margin-left:auto;
 }
-.block-one, .block-two, .customer-testimonial, .footer{
-    /* border:2px solid red; */
-    margin:auto;
-}
-.block-one, .block-two, .footer {
-    width:1000px;
 
-}
-.block-two, .customer-testimonial{
-    width:800px;
-}
-.section-one{
-    /* border:2px solid red; */
-    background-color: #1F2937;
-}
-.section-three{
-    /* border:2px solid red; */
-    background-color: #E5E7EB;
-}
 .hero-text{
     font-size: 48px;
     font-weight: 900;
 }
 .hero-subtext, li{
     font-size: 18px;
-    color:#E5E7EB;
+    
 }
+.hero-button{
+    padding:8px 35px; 
+    border-radius: 5px;
+}
+
+/*******Illustration-section*******/
+
+.illustration-section{
+    padding:20px 0px;
+}
+
 .block-two h2{
     font-size: 36px;
     color:#1F2937;
     font-weight: 900;
 }
 
+.block-two{
+    flex-direction: column;
+    align-items: center;
+}
+.illustration{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/*********Quote section*******/
+.quote-section{
+
+}
 .customer-testimonial{
+    flex-direction: column;
     background-color: #E5E7EB;
     font-size: 36px;
     font-style:italic;
     color: #1F2937;
 }
-#customer{
-    display: flex;
-    justify-content: flex-end;
+#testimonial{
+    margin-bottom: 0px;
 }
-.block-two{
-    flex-direction: column;
-    align-items: center;
+#author{
+    margin-top: 0px;
+    text-align: end;
+
 }
 
+/********* footer section*******/
 .footer{
-    /* width:500px; */
     align-items: center;
     background-color: #3882F6;
     color: #E5E7EB;
     margin-top:50px;
     margin-bottom:50px;
     border-radius: 8px;
+    padding: 10px 0px;
 }
 .footer-text{
     margin-right:auto;
     margin-left:150px;
-
 }
 .footer-text h4{
     margin-bottom:0px;
@@ -108,23 +155,14 @@ ul{
     margin-top:0px;
 }
 
-
 .footer-button{
-    /* border:2px solid red; */
-    margin-left:auto;
-    margin-right:150px;
     padding:8px 35px;
     border-radius: 8px;
-    border-color: #E5E7EB;
-    color: #E5E7EB;
-    border-style: solid;
 }
 
-
-li{
-    list-style-type: None;
+/*******Copyright-section***********/
+.copyright-section{
+    background-color: #1F2937;
+    padding:50px 0px;
+    justify-content: center;
 }
-button{
-    background-color:#3882F6;
-}
-
